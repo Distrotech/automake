@@ -682,6 +682,7 @@ install-exec-hook:
 	  rm -f $(DESTDIR)$(bindir)/$$fv; \
 	  echo " $(LN) $(DESTDIR)$(bindir)/$$f $(DESTDIR)$(bindir)/$$fv"; \
 	  $(LN) $(DESTDIR)$(bindir)/$$f $(DESTDIR)$(bindir)/$$fv; \
+	  rm $(DESTDIR)$(bindir)/$$f; \
 	done
 
 uninstall-hook:
